@@ -1,37 +1,126 @@
-body{
+body {
     background: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
 }
 
-header .nav{
+header .nav {
     min-height: 80px;
     background: #fff;
 }
 
 
 header .logo h2,
-header .logo p{
+header .logo p {
     font-size: 16px;
 }
 
 
-header .logo .icono{
+header .logo .icono {
     color: #bfbfbf;
 }
 
-header .logo svg{
+header .logo svg {
     width: 20px;
     height: 20px;
 }
 
-header .logo p{
+header .logo p {
     color: #777;
 }
 
-header .menu .c1{background: #3da5e2;}
-header .menu .c2{background: #005385;}
-header .menu .c3{background: #003855;}
+header .menu .c1 {
+    background: #3da5e2;
+}
 
-header .menu .c1:hover{background: #1ba0ef;}
-header .menu .c2:hover{background: #00426a;}
-header .menu .c3:hover{background: #002d44;}
+header .menu .c2 {
+    background: #005385;
+}
+
+header .menu .c3 {
+    background: #003855;
+}
+
+header .menu .c1:hover {
+    background: #1ba0ef;
+}
+
+header .menu .c2:hover {
+    background: #00426a;
+}
+
+header .menu .c3:hover {
+    background: #002d44;
+}
+
+
+/* Main */
+
+/* Portafolio */
+
+
+.portafolio {
+    border-top: 5px solid #3da5e2;
+    background: #fff;
+}
+
+.portafolio .titulo {
+    color: #3da5e2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.portafolio .galeria .contenedor-imagen {
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.portafolio .galeria .contenedor-imagen a {
+    background: #3da5e2;
+
+    display: inline-block;
+}
+
+.portafolio .galeria .contenedor-imagen:hover img {
+    opacity: .3;
+}
+
+/* Ventana Modal  */
+.modal-dialog{
+    max-width: 1000px;
+}
+
+
+/* Dispositivo md  */
+@media screen and (max-width:768px){}
+
+
+/* Dispositivo lg */
+@media screen and (max-width:992px){
+
+    .logo{
+        height: 76px;
+    }
+
+    header .menu{
+        min-height: 76px;
+    }
+
+    header .menu a{
+        width: 100%;
+    }
+
+    .portafolio .galeria .contenedor-imagen:nth-child(1){order: 1;}
+    .portafolio .galeria .contenedor-imagen:nth-child(2){order: 3;}
+    .portafolio .galeria .contenedor-imagen:nth-child(3){order: 6;}
+    .portafolio .galeria .contenedor-imagen:nth-child(4){order: 2;}
+    .portafolio .galeria .contenedor-imagen:nth-child(5){order: 5;}
+    .portafolio .galeria .contenedor-imagen:nth-child(6){order: 4;}
+    .portafolio .galeria .contenedor-imagen:nth-child(7){order: 7;}
+}
+
+/* Dispositivo xl  */
+@media screen and (max-width:1200px){}
+
+/* Dispositivo xxl  */
+@media screen and (max-width:1400px){}
+
